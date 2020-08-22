@@ -24,7 +24,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <input type="text" v-model="position" required>
-                        <label>Student's Status or Position</label>
+                        <label>Status: Running/ Ex </label>
                     </div>
                 </div>
                 <button type="submit" class="btn">Save</button>

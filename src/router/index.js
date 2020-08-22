@@ -4,7 +4,8 @@ import Dashboard from '@/components/Dashboard'
 import NewStudent from '@/components/NewStudent'
 import EditStudent from '@/components/EditStudent'
 import ViewStudent from '@/components/ViewStudent'
-
+import Login from '@/components/Login'
+import Register from '@/components/Register'
 
 
 Vue.use(Router)
@@ -15,6 +16,16 @@ export default new Router({
       path: '/',
       name: 'dashboard',
       component: Dashboard
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
     },
     {
       path: '/new',
