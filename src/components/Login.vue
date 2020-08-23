@@ -37,18 +37,18 @@ export default {
     },
     methods: {
         login: function(e) {
+             e.preventDefault() 
             firebase
             .auth()
             .signInWithEmailAndPassword(this.email, this.password)
             .then(user => {
                 alert(`You're logged in for ${this.email}`)
-                this.$router.push('/')
+                this.$router.go({path: this.$router.path})
             },
             err => {
                 alert(err.message)
             }            
-            )
-            e.preventDefault()            
+            )           
         }
     }
 }
